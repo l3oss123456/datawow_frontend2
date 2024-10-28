@@ -1,0 +1,96 @@
+@use 'sass:map';
+@use '../../configs/responsive.scss';
+
+.SearchBlogContainer {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.inputSearchContainer {
+    width: 70%;
+    display: flex;
+    align-items: center;
+
+    .inputSearch {
+        width: 100%;
+        background-color: white;
+    }
+
+    svg {
+        display: none;
+    }
+}
+
+.inputSelect {
+    // width: 150px;
+    width: 20%;
+    // max-width: 250px;
+    background-color: white;
+}
+
+.createBtn {
+    border-radius: 8px !important;
+    padding: 10px 16px !important;
+    gap: 8px;
+    //   background-color: #49a569 !important;
+    //   color: white !important;
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.inputSelectAddModal {
+    width: 40%;
+
+    svg {
+        color: #49a569;
+    }
+}
+
+// .windowAddModalContainer {
+//     display: flex;
+//     justify-content: flex-end;
+//     gap: 20px;
+// }
+.cancelBtnInAddModal {
+    width: Fixed (105px) px;
+    height: Hug (40px) px;
+    padding: 10px 16px 10px 16px;
+    gap: 8px;
+    border-radius: 8px 0px 0px 0px;
+    border: 1px solid #49a569 !important;
+    color: #49a569 !important;
+}
+.postBtnInAddModal {
+    width: Fixed (105px) px;
+    height: Hug (40px) px;
+    padding: 10px 16px 10px 16px;
+    gap: 8px;
+    border-radius: 8px 0px 0px 0px;
+    background-color: #49a569 !important;
+    color: white !important;
+}
+
+@media screen and (max-width: map.get(responsive.$responsive, 'sm', 'max')) {
+    .inputSearchContainer {
+        width: 40%;
+
+        .inputSearch {
+            display: none !important;
+        }
+
+        svg {
+            display: inline;
+        }
+    }
+
+    .inputSelect {
+        width: 50%;
+    }
+
+    .mobileInputSearch {
+        width: 100%;
+    }
+}

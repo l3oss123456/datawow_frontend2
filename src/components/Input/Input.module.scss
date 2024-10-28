@@ -1,0 +1,45 @@
+@use 'sass:map';
+@use '../../configs/responsive';
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    // align-items: var(--align-items, center);
+    // gap: 10px;
+    margin: var(--margin, 10px 0px);
+}
+.row_direction_container {
+    display: flex;
+    align-items: var(--align-items, center);
+    margin: var(--margin, 10px 0px);
+}
+.label_container {
+    // width: 30%;
+}
+.label_container p {
+    margin: 0px;
+}
+
+.custom_helper_text {
+    font-weight: 700 !important;
+    font-size: 12px;
+    line-height: 1.476;
+    letter-spacing: 0.00735em;
+    text-align: left;
+    margin-top: 3px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-left: 14px;
+    margin-right: 14px;
+    color: var(--color, #fe6622);
+}
+
+
+@media screen and (max-width: map.get(responsive.$responsive, 'sm', 'max')) {
+    .container {
+        flex-flow: column wrap;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}

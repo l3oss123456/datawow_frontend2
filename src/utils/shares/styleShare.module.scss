@@ -1,0 +1,22 @@
+.background {
+  // background: url('../assets/image/Homepage_POS_1.png') no-repeat center
+  //     center;
+  // background-size: cover;
+  // position: relative;
+  background-color: white;
+}
+.container {
+  // padding: var(--padding, 20px 10px 20px);
+  // width: 80vw;
+  display: flex;
+  // flex-flow: column wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.container .wrapper {
+  width: 80%;
+  padding: 20px;
+}

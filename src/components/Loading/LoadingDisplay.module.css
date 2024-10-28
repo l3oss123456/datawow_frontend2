@@ -1,0 +1,18 @@
+.logoanima {
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 30px;
+    }
+    100% {
+        top: 0px;
+    }
+}
